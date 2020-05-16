@@ -1,0 +1,38 @@
+<html>
+  <body>
+    <canvas id="canvas"></canvas>
+        <script src="dist/qrun.js"></script> 
+      <img id="image" height="252" width="252">
+      <form >
+      <label for="fname">Text:</label>
+      <input type="text" id="fname" name="fname"><br><br>
+
+      <input type="submit" value="Submit" onclick='getQR("tdsdest");'/>
+          
+    </form>
+      
+      <div>
+      
+      <p id="answer">
+          
+          </p>
+      </div>
+
+
+<!--
+      //<script src="run.js"></script>
+
+      //<script src="dist/fishy.js"></script>
+-->
+      
+      <script>
+            
+            var img = new Image()
+            img.src = getQR("zelia")
+            document.body.appendChild(img)
+          
+          //message()
+          //fishy("test")
+      </script>
+  </body>
+</html>
